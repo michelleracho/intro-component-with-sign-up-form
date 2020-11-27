@@ -3,3 +3,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin btnReset {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}

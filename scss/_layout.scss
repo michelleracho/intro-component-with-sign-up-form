@@ -1,14 +1,14 @@
 .container {
   color: #fff;
-  margin: 2rem;
+  margin: 7rem 2.3rem;
+  text-align: center;
 
   @include flexCenter;
   flex-direction: column;
 }
 
 .text {
-  text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 
   &__heading {
     font-size: 3rem;
@@ -17,11 +17,76 @@
   }
 
   &__description {
-    line-height: 1.7;
+    // line-height: 1.7;
+    color: $color-text;
   }
 }
 
 .form-container {
+  .promo {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-text;
+    padding: 1.5rem 4.5rem;
+    background-color: $color-accent-blue;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    margin-bottom: 1.7rem;
+
+    span {
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 2.3rem;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+
+  &__input {
+    display: block;
+    width: 100%;
+    outline: none;
+    font-family: inherit;
+    color: $color-neutral-dark-blue;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba($color-neutral-grayish-blue, 0.45);
+    margin-bottom: 1.5rem;
+
+    &::placeholder {
+      font-weight: 600;
+    }
+  }
+
+  &__cta {
+    @include btnReset;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: $color-primary-green;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 -0.4rem 0 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &__terms {
+    font-size: 1.15rem;
+    color: $color-neutral-grayish-blue;
+    padding: 0 1.5rem;
+
+    span {
+      color: $color-primary-red;
+      font-weight: 600;
+    }
+  }
 }
 
 footer {
