@@ -37,34 +37,50 @@
         </h3>
 
         <form class="signup-form">
-          <input
-            type="text"
-            class="signup-form__input"
-            id="first-name"
-            placeholder="First Name"
-            aria-label="first name"
-          />
-          <input
-            type="text"
-            class="signup-form__input"
-            id="last-name"
-            placeholder="Last Name"
-            aria-label="last name"
-          />
-          <input
-            type="email"
-            class="signup-form__input"
-            id="email"
-            placeholder="Email Address"
-            aria-label="email address"
-          />
-          <input
-            type="password"
-            class="signup-form__input"
-            id="password"
-            placeholder="Password"
-            aria-label="password"
-          />
+          <div class="signup-form__input-container">
+            <input
+              type="text"
+              class="signup-form__input error-input"
+              id="first-name"
+              placeholder="First Name"
+              aria-label="first name"
+            />
+            <span class="error-msg">error</span>
+            <img src="./images/icon-error.svg" alt="error" class="error-icon" />
+          </div>
+          <div class="signup-form__input-container">
+            <input
+              type="text"
+              class="signup-form__input"
+              id="last-name"
+              placeholder="Last Name"
+              aria-label="last name"
+            />
+            <span class="error-msg">error</span>
+            <img src="./images/icon-error.svg" alt="error" class="error-icon" />
+          </div>
+          <div class="signup-form__input-container">
+            <input
+              type="email"
+              class="signup-form__input"
+              id="email"
+              placeholder="Email Address"
+              aria-label="email address"
+            />
+            <span class="error-msg">error</span>
+            <img src="./images/icon-error.svg" alt="error" class="error-icon" />
+          </div>
+          <div class="signup-form__input-container">
+            <input
+              type="password"
+              class="signup-form__input"
+              id="password"
+              placeholder="Password"
+              aria-label="password"
+            />
+            <span class="error-msg">error</span>
+            <img src="./images/icon-error.svg" alt="error" class="error-icon" />
+          </div>
 
           <button class="signup-form__cta">Claim your free trial</button>
 
