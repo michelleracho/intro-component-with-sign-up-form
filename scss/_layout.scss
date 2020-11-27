@@ -99,9 +99,10 @@
     padding: 1.5rem 2.5rem;
     border-radius: 0.5rem;
     border: 1px solid rgba($color-neutral-grayish-blue, 0.45);
+    font-weight: 600;
 
     &::placeholder {
-      font-weight: 600;
+      // font-weight: 600;
     }
   }
 
@@ -139,7 +140,12 @@
 }
 
 .error-input {
+  color: $color-primary-red;
   box-shadow: inset 0 0 0 2px $color-primary-red;
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
 .error {
