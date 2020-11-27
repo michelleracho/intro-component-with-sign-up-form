@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll('.signup-form__input-container');
 
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#email + .error');
-const emailErrorSpan = document.querySelector('#email + .error > .error__msg');
+const emailErrorMsg = document.querySelector('#email + .error > .error__msg');
 
 const emailPattern = email => {
   // abc@email.com
@@ -17,7 +17,7 @@ const validateEmail = () => {
 
   if (email.value !== '' && !isValidEmail) {
     emailError.classList.add('show');
-    emailErrorSpan.innerText = 'Looks like this is not an email';
+    emailErrorMsg.innerText = 'Looks like this is not an email';
     email.classList.add('error-input');
   }
 };
