@@ -131,22 +131,27 @@
   box-shadow: inset 0 0 0 2px $color-primary-red;
 }
 
-.error-msg {
-  font-size: 1.15rem;
-  color: $color-primary-red;
-  position: absolute;
-  // bottom: -2rem;
-  right: 0;
-  // opacity: 0;
-}
-
-.error-icon {
+.error {
   // border: 1px solid red;
-  position: absolute;
-  right: 2.5rem;
-  top: 0;
-  transform: translateY(50%);
-  // opacity: 0;
+  // width: 100%;
+  opacity: 0;
+
+  &__msg {
+    font-size: 1.15rem;
+    color: $color-primary-red;
+    position: absolute;
+    // bottom: -2rem;
+    right: 0;
+  }
+
+  &__icon {
+    // border: 1px solid red;
+    position: absolute;
+    right: 2.5rem;
+    top: 0;
+    transform: translateY(50%);
+    // opacity: 0;
+  }
 }
 
 .show {

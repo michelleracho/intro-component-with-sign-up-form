@@ -220,14 +220,18 @@ body {
           box-shadow: inset 0 0 0 2px #ff7a7a;
 }
 
-.error-msg {
+.error {
+  opacity: 0;
+}
+
+.error__msg {
   font-size: 1.15rem;
   color: #ff7a7a;
   position: absolute;
   right: 0;
 }
 
-.error-icon {
+.error__icon {
   position: absolute;
   right: 2.5rem;
   top: 0;
