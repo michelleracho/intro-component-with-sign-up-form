@@ -17,24 +17,22 @@ const validateEmail = () => {
 
   if (email.value !== '' && !isValidEmail) {
     emailError.classList.add('show');
-    emailErrorSpan.innerHTML = 'Looks like this is not an email';
+    emailErrorSpan.innerText = 'Looks like this is not an email';
     email.classList.add('error-input');
   }
 };
 
 const checkInput = () => {
   for (let i = 0; i <= inputs.length - 1; i++) {
-    let error = inputs[i].querySelector('.error');
-    let inputValue = inputs[i].querySelector('.signup-form__input');
-    let inputSpan = inputs[i].querySelector('.input-span');
-    // let errorMsg = inputs[i].querySelectorAll('.error-msg');
+    const inputValue = inputs[i].querySelector('.signup-form__input');
+    const error = inputs[i].querySelector('.error');
+    const errorMsg = inputs[i].querySelector('.error__msg');
 
     // check input value
     if (inputValue.value === '') {
       error.classList.add('show');
       inputValue.classList.add('error-input');
-      inputSpan.innerText = inputValue.placeholder;
-      // errorMsg.innerHTML = `${inputValue.placeholder} cannot be empty`;
+      errorMsg.innerText = `${inputValue.placeholder} cannot be empty`;
     }
 
     // validate email and remove error
